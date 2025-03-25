@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server Information</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            white-space: pre-wrap; /* Since 'top' output can be long */
+            word-wrap: break-word;
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Server Information</h1>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Username:</strong> {{ username }}</p>
+        <p><strong>Server Time (IST):</strong> {{ server_time }}</p>
+        <h2>Top Output:</h2>
+        <pre>{{ top_output }}</pre>
+    </div>
+</body>
+</html>
